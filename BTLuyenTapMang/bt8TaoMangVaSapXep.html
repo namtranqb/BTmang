@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function random_number() {
+                let num = Math.floor(Math.random() * 199 - 99);
+                return num;
+            }
+            let Arr = [];
+            let Arr2 = [];
+            let number = 10;
+            for (let i = 0; i < number; i++) {
+                Arr.push(random_number());
+            }
+            Arr2 = Arr.slice(0);
+            Arr2.sort((num1, num2) => num1 - num2);
+            alert(`Array =[${Arr}] \r\n Array2 =[${Arr2}]`);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dem so nguyen am</title>
+    </head>
+    <body>
+        <script>
+            let Arr = [];
+            let In_num = parseInt(prompt("nhap sp pt mang:"));
+            function random_number() {
+                let num = Math.floor(Math.random() * 199 - 99);
+                return num;
+            }
+            let count = 0;
+            let Arr2 = [];
+            for (let i = 0; i <= In_num - 1; i++) {
+                Arr.push(random_number());
+                if (Arr[i] < 0) {
+                    Arr2.push(Arr[i]);
+                    count++;
+                }
+            }
+            alert(`Array = [ ${Arr}]`);
+            alert(`So nguyen am trong mang Array: ${count} \r\n
+                    Mang Array2 = [${Arr2}]`);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function random_number() {
+                let num = Math.floor(Math.random() * 199 - 99);
+                return num;
+            }
+            let Arr_A = [];
+            let Arr_B = [];
+            let Arr_C = [];
+            let number = 10;
+            for (let i = 0; i < number; i++) {
+                Arr_A.push(random_number());
+                Arr_B.push(random_number());
+            }
+            Arr_C = Arr_A.concat(Arr_B);
+            alert(
+                `Array A =[${Arr_A}] \r\n Array B =[${Arr_B}] \r\n Array C =[${Arr_C}]`
+            );
+        </script>
+    </body>
+</html>

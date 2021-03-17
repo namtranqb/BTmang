@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function random_number() {
+                let num = Math.floor(Math.random() * 199 - 99);
+                return num;
+            }
+
+            let Arr = [];
+            let Arr2 = [];
+            let count = 0;
+            let In_num = parseInt(prompt("nhap so pt mang:"));
+            let In_V = +prompt("nhap pt V:");
+            for (let i = 0; i <= In_num - 1; i++) {
+                Arr.push(random_number());
+            }
+            for (let i = 0; i <= Arr.length - 1; i++) {
+                if (In_V != Arr[i]) {
+                    Arr2.push(Arr[i]);
+                } else {
+                    count += 1;
+                }
+            }
+            for (let i = 0; i < count; i++) {
+                Arr2[Arr2.length] = 0;
+            }
+            alert(`Array =[${Arr}] \r\n Array2 =[${Arr2}] \r\n pt V =${In_V}`);
+        </script>
+    </body>
+</html>

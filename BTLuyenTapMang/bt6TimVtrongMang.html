@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tim V</title>
+    </head>
+    <body>
+        <script>
+            let Arr = [];
+            let In_num = parseInt(prompt("nhap so pt mang:"));
+            function random_number() {
+                let num = Math.floor(Math.random() * 199 - 99);
+                return num;
+            }
+
+            let In_V = +prompt("nhap pt V:");
+            for (let i = 0; i <= In_num - 1; i++) {
+                Arr.push(random_number());
+            }
+            for (let i = 0; i <= Arr.length - 1; i++) {
+                if (In_V == Arr[i]) {
+                    alert("true");
+                    break;
+                } else {
+                    alert("false");
+                    break;
+                }
+            }
+            // Arr.filter((value) => value == V);
+            // if (true) {
+            //     alert("true");
+            // } else {
+            //     alert("false");
+            // }
+
+            alert(`Array =[${Arr}] \r\n pt V =${In_V}`);
+        </script>
+    </body>
+</html>
