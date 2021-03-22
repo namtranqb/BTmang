@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[ 'c', 's', 'c', '2', '6', '1' ] ;
+        let b=[ 'c2', 's', 'c2', '2', 'q6', '1' ] ;
+        let c=[ 'c', 's', 'c', '2', '6', '1' ] ;
+        let kt=true;
+        if(a.length = b.length){
+            for(let i=0;i<a.length;i++){
+                if(b[i]!=a[i]){
+                    kt=false;
+                    break;
+                }
+                
+            }
+            document.write(`${kt} <br>`);
+
+        }
+        kt=true;
+        if (a.length = c.length){
+            for(let i=0;i<a.length;i++){
+                if(c[i]!=a[i]){
+                    kt=false;
+                    break;
+                }
+                
+            }
+            document.write(`${kt}`);
+
+        }
+    </script>
+</body>
+</html>
